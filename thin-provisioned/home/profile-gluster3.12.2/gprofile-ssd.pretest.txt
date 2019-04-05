@@ -1,0 +1,186 @@
+Brick: tendrl14.lab.eng.blr.redhat.com:/gluster_bricks/vmstore/vmstore
+----------------------------------------------------------------------
+Cumulative Stats:
+   Block Size:                256b+                 512b+                8192b+ 
+ No. of Reads:                  185                     2                     0 
+No. of Writes:                   14                 26234                     2 
+ 
+   Block Size:              65536b+              131072b+ 
+ No. of Reads:                    0                    16 
+No. of Writes:                    1                    41 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us             31      FORGET
+      0.00       0.00 us       0.00 us       0.00 us           2196     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          11652  RELEASEDIR
+      0.32      40.33 us      23.00 us      80.00 us              6     INODELK
+      0.40      99.67 us      64.00 us     145.00 us              3     SETATTR
+      0.87      36.61 us      15.00 us      84.00 us             18       FLUSH
+      0.93      58.58 us      32.00 us     119.00 us             12     OPENDIR
+      1.98      82.89 us      41.00 us     163.00 us             18        OPEN
+      3.81      44.95 us      22.00 us      92.00 us             64    FINODELK
+      9.55      46.80 us      17.00 us     197.00 us            154      STATFS
+     11.54     136.08 us      90.00 us     300.00 us             64    FXATTROP
+     14.29     336.84 us     275.00 us     449.00 us             32       WRITE
+     56.31     123.15 us      53.00 us     346.00 us            345      LOOKUP
+ 
+    Duration: 682498 seconds
+   Data Read: 2164353 bytes
+Data Written: 18956710 bytes
+ 
+Interval 11 Stats:
+   Block Size:                256b+                 512b+                8192b+ 
+ No. of Reads:                    4                     2                     0 
+No. of Writes:                    9                 26224                     2 
+ 
+   Block Size:              65536b+              131072b+ 
+ No. of Reads:                    0                    16 
+No. of Writes:                    1                    41 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us             19      FORGET
+      0.00       0.00 us       0.00 us       0.00 us           2148     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          11402  RELEASEDIR
+      0.32      40.33 us      23.00 us      80.00 us              6     INODELK
+      0.40      99.67 us      64.00 us     145.00 us              3     SETATTR
+      0.88      36.61 us      15.00 us      84.00 us             18       FLUSH
+      0.94      58.58 us      32.00 us     119.00 us             12     OPENDIR
+      1.99      82.89 us      41.00 us     163.00 us             18        OPEN
+      3.83      44.95 us      22.00 us      92.00 us             64    FINODELK
+      9.51      46.99 us      20.00 us     197.00 us            152      STATFS
+     11.60     136.08 us      90.00 us     300.00 us             64    FXATTROP
+     14.36     336.84 us     275.00 us     449.00 us             32       WRITE
+     56.17     123.64 us      63.00 us     346.00 us            341      LOOKUP
+ 
+    Duration: 673050 seconds
+   Data Read: 2099555 bytes
+Data Written: 18949910 bytes
+ 
+Brick: tendrl16.lab.eng.blr.redhat.com:/gluster_bricks/vmstore/vmstore
+----------------------------------------------------------------------
+Cumulative Stats:
+   Block Size:                256b+                 512b+                8192b+ 
+ No. of Reads:                53738                     1                     0 
+No. of Writes:                   14                 26234                     2 
+ 
+   Block Size:              65536b+              131072b+ 
+ No. of Reads:                    0                     8 
+No. of Writes:                    1                    41 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us             32      FORGET
+      0.00       0.00 us       0.00 us       0.00 us           2196     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          11655  RELEASEDIR
+      0.19      28.50 us      16.00 us      50.00 us              6     INODELK
+      0.22      67.67 us      58.00 us      83.00 us              3     SETATTR
+      0.59      45.17 us      21.00 us      82.00 us             12     OPENDIR
+      0.71      36.22 us      12.00 us      78.00 us             18       FLUSH
+      1.35      82.13 us      34.00 us     123.00 us             15       FSTAT
+      1.70      86.50 us      40.00 us     161.00 us             18        OPEN
+      3.15      45.11 us      18.00 us      95.00 us             64    FINODELK
+      7.29      43.34 us      19.00 us     117.00 us            154      STATFS
+      9.71     139.02 us      74.00 us     256.00 us             64    FXATTROP
+     12.06     345.22 us     258.00 us     481.00 us             32       WRITE
+     16.83     223.41 us     157.00 us     346.00 us             69        READ
+     46.20     122.63 us      56.00 us     316.00 us            345      LOOKUP
+ 
+    Duration: 682498 seconds
+   Data Read: 19910945 bytes
+Data Written: 18956710 bytes
+ 
+Interval 11 Stats:
+   Block Size:                256b+                 512b+                8192b+ 
+ No. of Reads:                53736                     1                     0 
+No. of Writes:                    9                 26224                     2 
+ 
+   Block Size:              65536b+              131072b+ 
+ No. of Reads:                    0                     8 
+No. of Writes:                    1                    41 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us             19      FORGET
+      0.00       0.00 us       0.00 us       0.00 us           2148     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          11402  RELEASEDIR
+      0.19      28.50 us      16.00 us      50.00 us              6     INODELK
+      0.22      67.67 us      58.00 us      83.00 us              3     SETATTR
+      0.59      45.17 us      21.00 us      82.00 us             12     OPENDIR
+      0.72      36.22 us      12.00 us      78.00 us             18       FLUSH
+      1.35      82.13 us      34.00 us     123.00 us             15       FSTAT
+      1.71      86.50 us      40.00 us     161.00 us             18        OPEN
+      3.17      45.11 us      18.00 us      95.00 us             64    FINODELK
+      7.27      43.58 us      19.00 us     117.00 us            152      STATFS
+      9.76     139.02 us      74.00 us     256.00 us             64    FXATTROP
+     12.12     345.22 us     258.00 us     481.00 us             32       WRITE
+     16.91     223.41 us     157.00 us     346.00 us             69        READ
+     45.99     122.91 us      56.00 us     316.00 us            341      LOOKUP
+ 
+    Duration: 673050 seconds
+   Data Read: 19910301 bytes
+Data Written: 18949910 bytes
+ 
+Brick: tendrl15.lab.eng.blr.redhat.com:/gluster_bricks/vmstore/vmstore
+----------------------------------------------------------------------
+Cumulative Stats:
+   Block Size:                256b+                 512b+                8192b+ 
+ No. of Reads:                   64                    21                     0 
+No. of Writes:                   14                 26234                     2 
+ 
+   Block Size:              65536b+              131072b+ 
+ No. of Reads:                    0                209704 
+No. of Writes:                    1                    41 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us             32      FORGET
+      0.00       0.00 us       0.00 us       0.00 us           2196     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          11646  RELEASEDIR
+      0.03      26.17 us      18.00 us      42.00 us              6     INODELK
+      0.04      68.67 us      62.00 us      80.00 us              3     SETATTR
+      0.08      21.89 us      15.00 us      41.00 us             18       FLUSH
+      0.10      41.17 us      24.00 us      83.00 us             12     OPENDIR
+      0.24      63.11 us      47.00 us     100.00 us             18        OPEN
+      0.45      88.75 us      19.00 us     171.00 us             24    READDIRP
+      0.53      39.06 us      19.00 us      84.00 us             64    FINODELK
+      0.54      78.91 us      39.00 us     142.00 us             32       FSTAT
+      1.49      45.57 us      18.00 us     108.00 us            154      STATFS
+      1.67      54.57 us      22.00 us     125.00 us            144        STAT
+      1.83     134.72 us      81.00 us     236.00 us             64    FXATTROP
+      2.05     302.25 us     227.00 us     553.00 us             32       WRITE
+      8.81     120.32 us      54.00 us     300.00 us            345      LOOKUP
+     82.13    1511.62 us     629.00 us    4332.00 us            256        READ
+ 
+    Duration: 682445 seconds
+   Data Read: 27486356151 bytes
+Data Written: 18956710 bytes
+ 
+Interval 11 Stats:
+   Block Size:                256b+                 512b+                8192b+ 
+ No. of Reads:                    1                    11                     0 
+No. of Writes:                    9                 26224                     2 
+ 
+   Block Size:              65536b+              131072b+ 
+ No. of Reads:                    0                209704 
+No. of Writes:                    1                    41 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us             19      FORGET
+      0.00       0.00 us       0.00 us       0.00 us           2148     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          11402  RELEASEDIR
+      0.03      26.17 us      18.00 us      42.00 us              6     INODELK
+      0.04      68.67 us      62.00 us      80.00 us              3     SETATTR
+      0.08      21.89 us      15.00 us      41.00 us             18       FLUSH
+      0.10      41.17 us      24.00 us      83.00 us             12     OPENDIR
+      0.24      63.11 us      47.00 us     100.00 us             18        OPEN
+      0.45      88.75 us      19.00 us     171.00 us             24    READDIRP
+      0.53      39.06 us      19.00 us      84.00 us             64    FINODELK
+      0.54      78.91 us      39.00 us     142.00 us             32       FSTAT
+      1.48      45.88 us      19.00 us     108.00 us            152      STATFS
+      1.67      54.57 us      22.00 us     125.00 us            144        STAT
+      1.83     134.72 us      81.00 us     236.00 us             64    FXATTROP
+      2.05     302.25 us     227.00 us     553.00 us             32       WRITE
+      8.76     120.99 us      63.00 us     300.00 us            341      LOOKUP
+     82.18    1511.62 us     629.00 us    4332.00 us            256        READ
+ 
+    Duration: 673050 seconds
+   Data Read: 27486328647 bytes
+Data Written: 18949910 bytes
+ 

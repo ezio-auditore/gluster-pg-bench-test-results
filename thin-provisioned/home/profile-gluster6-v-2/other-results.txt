@@ -1,0 +1,13 @@
+real	25m56.818s
+user	1m26.704s
+sys	0m3.247s
+
+
+SELECT pg_size_pretty( pg_database_size( current_database()
+) ) As human_size
+    , pg_database_size( current_database() ) As raw_size;
+
+ human_size |  raw_size   
+------------+-------------
+ 58 GB      | 62726583416
+(1 row)

@@ -1,0 +1,27 @@
+3.12.2
+
+time pgbench -i -s 4000 pgbench
+
+real	20m40.080s
+
+user	1m22.678s
+
+sys	0m3.231s
+
+
+
+SELECT pg_size_pretty( pg_database_size( current_database()
+
+) ) As human_size
+
+    , pg_database_size( current_database() ) As raw_size;
+
+
+
+human_size |  raw_size   
+
+------------+-------------
+
+ 58 GB      | 62726583416
+
+(1 row)

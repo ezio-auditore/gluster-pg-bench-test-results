@@ -1,0 +1,312 @@
+-bash-4.2$ pgbench -c 10 -t 500 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 500
+number of transactions actually processed: 5000/5000
+tps = 1256.640402 (including connections establishing)
+tps = 1262.883623 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001499	\set nbranches 1 * :scale
+	0.000462	\set ntellers 10 * :scale
+	0.000505	\set naccounts 100000 * :scale
+	0.000538	\setrandom aid 1 :naccounts
+	0.000420	\setrandom bid 1 :nbranches
+	0.000459	\setrandom tid 1 :ntellers
+	0.000404	\setrandom delta -5000 5000
+	0.151471	BEGIN;
+	2.446735	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.209514	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.244079	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.252559	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.205055	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	4.300409	END;
+-bash-4.2$ pgbench -c 10 -t 1000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 1000
+number of transactions actually processed: 10000/10000
+tps = 900.845308 (including connections establishing)
+tps = 902.374698 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001491	\set nbranches 1 * :scale
+	0.000484	\set ntellers 10 * :scale
+	0.000511	\set naccounts 100000 * :scale
+	0.000546	\setrandom aid 1 :naccounts
+	0.000436	\setrandom bid 1 :nbranches
+	0.000444	\setrandom tid 1 :ntellers
+	0.000434	\setrandom delta -5000 5000
+	0.161786	BEGIN;
+	3.079812	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.230856	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.262903	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.262974	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.213133	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	6.761073	END;
+-bash-4.2$ pgbench -c 10 -t 2000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 2000
+number of transactions actually processed: 20000/20000
+tps = 834.261623 (including connections establishing)
+tps = 834.940141 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001543	\set nbranches 1 * :scale
+	0.000555	\set ntellers 10 * :scale
+	0.000576	\set naccounts 100000 * :scale
+	0.000603	\setrandom aid 1 :naccounts
+	0.000490	\setrandom bid 1 :nbranches
+	0.000504	\setrandom tid 1 :ntellers
+	0.000482	\setrandom delta -5000 5000
+	0.165219	BEGIN;
+	3.307251	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.243409	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.275614	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.270142	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.215379	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	7.434524	END;
+-bash-4.2$ pgbench -c 10 -t 4000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 4000
+number of transactions actually processed: 40000/40000
+tps = 720.601620 (including connections establishing)
+tps = 720.875534 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001526	\set nbranches 1 * :scale
+	0.000498	\set ntellers 10 * :scale
+	0.000550	\set naccounts 100000 * :scale
+	0.000577	\setrandom aid 1 :naccounts
+	0.000457	\setrandom bid 1 :nbranches
+	0.000452	\setrandom tid 1 :ntellers
+	0.000434	\setrandom delta -5000 5000
+	0.163835	BEGIN;
+	3.872116	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.240261	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.275460	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.266801	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.209791	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	8.797035	END;
+-bash-4.2$ pgbench -c 10 -t 500 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 500
+number of transactions actually processed: 5000/5000
+tps = 658.658868 (including connections establishing)
+tps = 660.256631 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001530	\set nbranches 1 * :scale
+	0.000481	\set ntellers 10 * :scale
+	0.000518	\set naccounts 100000 * :scale
+	0.000569	\setrandom aid 1 :naccounts
+	0.000445	\setrandom bid 1 :nbranches
+	0.000463	\setrandom tid 1 :ntellers
+	0.000444	\setrandom delta -5000 5000
+	0.170610	BEGIN;
+	3.933008	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.229294	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.255496	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.248478	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.206367	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	9.988119	END;
+-bash-4.2$ pgbench -c 10 -t 1000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 1000
+number of transactions actually processed: 10000/10000
+tps = 707.400284 (including connections establishing)
+tps = 708.283869 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001496	\set nbranches 1 * :scale
+	0.000475	\set ntellers 10 * :scale
+	0.000530	\set naccounts 100000 * :scale
+	0.000555	\setrandom aid 1 :naccounts
+	0.000435	\setrandom bid 1 :nbranches
+	0.000452	\setrandom tid 1 :ntellers
+	0.000423	\setrandom delta -5000 5000
+	0.168380	BEGIN;
+	3.865340	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.239113	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.255698	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.257670	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.208499	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	9.064252	END;
+-bash-4.2$ pgbench -c 10 -t 2000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 2000
+number of transactions actually processed: 20000/20000
+tps = 644.019589 (including connections establishing)
+tps = 644.461322 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001606	\set nbranches 1 * :scale
+	0.000516	\set ntellers 10 * :scale
+	0.000564	\set naccounts 100000 * :scale
+	0.000596	\setrandom aid 1 :naccounts
+	0.000454	\setrandom bid 1 :nbranches
+	0.000479	\setrandom tid 1 :ntellers
+	0.000453	\setrandom delta -5000 5000
+	0.174920	BEGIN;
+	4.462529	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.245602	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.259834	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.256866	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.207700	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	9.867036	END;
+-bash-4.2$ pgbench -c 10 -t 4000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 4000
+number of transactions actually processed: 40000/40000
+tps = 741.010702 (including connections establishing)
+tps = 741.231395 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001516	\set nbranches 1 * :scale
+	0.000489	\set ntellers 10 * :scale
+	0.000532	\set naccounts 100000 * :scale
+	0.000560	\setrandom aid 1 :naccounts
+	0.000452	\setrandom bid 1 :nbranches
+	0.000468	\setrandom tid 1 :ntellers
+	0.000452	\setrandom delta -5000 5000
+	0.168613	BEGIN;
+	3.653187	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.237093	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.261984	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.255027	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.205783	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	8.438168	END;
+-bash-4.2$ pgbench -c 10 -t 500 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 500
+number of transactions actually processed: 5000/5000
+tps = 1219.397988 (including connections establishing)
+tps = 1224.439819 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001391	\set nbranches 1 * :scale
+	0.000471	\set ntellers 10 * :scale
+	0.000517	\set naccounts 100000 * :scale
+	0.000524	\setrandom aid 1 :naccounts
+	0.000431	\setrandom bid 1 :nbranches
+	0.000417	\setrandom tid 1 :ntellers
+	0.000433	\setrandom delta -5000 5000
+	0.157472	BEGIN;
+	2.233831	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.224661	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.253624	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.248438	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.213234	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	4.740880	END;
+-bash-4.2$ pgbench -c 10 -t 1000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 1000
+number of transactions actually processed: 10000/10000
+tps = 749.200884 (including connections establishing)
+tps = 750.163236 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001559	\set nbranches 1 * :scale
+	0.000508	\set ntellers 10 * :scale
+	0.000548	\set naccounts 100000 * :scale
+	0.000554	\setrandom aid 1 :naccounts
+	0.000434	\setrandom bid 1 :nbranches
+	0.000452	\setrandom tid 1 :ntellers
+	0.000423	\setrandom delta -5000 5000
+	0.162633	BEGIN;
+	3.615190	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.231737	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.245812	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.249743	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.203407	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	8.538358	END;
+-bash-4.2$ pgbench -c 10 -t 2000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 2000
+number of transactions actually processed: 20000/20000
+tps = 696.907747 (including connections establishing)
+tps = 697.318097 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001496	\set nbranches 1 * :scale
+	0.000494	\set ntellers 10 * :scale
+	0.000550	\set naccounts 100000 * :scale
+	0.000569	\setrandom aid 1 :naccounts
+	0.000451	\setrandom bid 1 :nbranches
+	0.000455	\setrandom tid 1 :ntellers
+	0.000443	\setrandom delta -5000 5000
+	0.167015	BEGIN;
+	3.749635	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.236320	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.249487	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.245813	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.200160	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	9.427956	END;
+-bash-4.2$ pgbench -c 10 -t 4000 -r pgbench
+starting vacuum...end.
+transaction type: TPC-B (sort of)
+scaling factor: 4000
+query mode: simple
+number of clients: 10
+number of threads: 1
+number of transactions per client: 4000
+number of transactions actually processed: 40000/40000
+tps = 720.725136 (including connections establishing)
+tps = 720.932519 (excluding connections establishing)
+statement latencies in milliseconds:
+	0.001511	\set nbranches 1 * :scale
+	0.000505	\set ntellers 10 * :scale
+	0.000539	\set naccounts 100000 * :scale
+	0.000568	\setrandom aid 1 :naccounts
+	0.000450	\setrandom bid 1 :nbranches
+	0.000478	\setrandom tid 1 :ntellers
+	0.000435	\setrandom delta -5000 5000
+	0.166289	BEGIN;
+	3.713547	UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
+	0.235809	SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+	0.255681	UPDATE pgbench_tellers SET tbalance = tbalance + :delta WHERE tid = :tid;
+	0.250692	UPDATE pgbench_branches SET bbalance = bbalance + :delta WHERE bid = :bid;
+	0.200539	INSERT INTO pgbench_history (tid, bid, aid, delta, mtime) VALUES (:tid, :bid, :aid, :delta, CURRENT_TIMESTAMP);
+	8.993891	END;

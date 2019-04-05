@@ -1,0 +1,301 @@
+Brick: tendrl14.lab.eng.blr.redhat.com:/gluster_bricks/vmstore/vmstore
+----------------------------------------------------------------------
+Cumulative Stats:
+   Block Size:                256b+                 512b+                1024b+ 
+ No. of Reads:                    4                    24                     2 
+No. of Writes:                   18                 93062                  2784 
+ 
+   Block Size:               2048b+                4096b+                8192b+ 
+ No. of Reads:                    0                   361                382821 
+No. of Writes:                22753                 10068               1216387 
+ 
+   Block Size:              16384b+               32768b+               65536b+ 
+ No. of Reads:                 1243                  2570                182539 
+No. of Writes:                73083                 62372                181782 
+ 
+   Block Size:             131072b+ 
+ No. of Reads:               486054 
+No. of Writes:              2703454 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us            243      FORGET
+      0.00       0.00 us       0.00 us       0.00 us         188998     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          29347  RELEASEDIR
+      0.00      74.21 us      74.21 us      74.21 us              1   FGETXATTR
+      0.00     112.37 us     112.37 us     112.37 us              1   FSETXATTR
+      0.00      62.12 us      40.30 us      83.93 us              2        STAT
+      0.00      52.52 us      42.45 us      82.18 us              7       FSTAT
+      0.00     195.43 us     186.01 us     204.84 us              2       RMDIR
+      0.00     662.44 us     201.80 us    1123.08 us              2       MKDIR
+      0.00     239.66 us      98.51 us     744.88 us              8    TRUNCATE
+      0.00      25.93 us      12.22 us      80.40 us            139          LK
+      0.00     291.04 us     210.57 us     736.45 us             18    READDIRP
+      0.00     364.83 us     179.03 us     804.52 us             20      RENAME
+      0.00     480.18 us     154.36 us     998.51 us             22      CREATE
+      0.00     197.52 us      39.92 us    1508.02 us            603     XATTROP
+      0.00     126.03 us      77.71 us     409.84 us           2647 REMOVEXATTR
+      0.00      62.79 us       7.88 us   75441.90 us           8153    GETXATTR
+      0.00     109.58 us      66.33 us     897.08 us           6064     SETATTR
+      0.00     436.61 us     126.70 us   11897.42 us           2167       MKNOD
+      0.00     110.41 us       8.92 us    1158.17 us          10074     READDIR
+      0.00      46.42 us       0.82 us   18740.19 us          29347     OPENDIR
+      0.01      37.23 us       8.24 us   13735.93 us         187530       FLUSH
+      0.03      76.03 us      28.84 us   37847.68 us         188981        OPEN
+      0.04      53.32 us      18.59 us   36696.13 us         373456      STATFS
+      0.10   24137.45 us      59.87 us   96032.17 us           2173      UNLINK
+      0.27     123.04 us      10.26 us  110529.10 us        1189445      LOOKUP
+      0.35     146.59 us      21.36 us  343558.60 us        1317755       FSYNC
+      1.07    9977.58 us       5.94 us  476929.53 us          59167     ENTRYLK
+      1.23     172.78 us      19.12 us  341289.60 us        3930870    FXATTROP
+      1.49   36639.73 us      10.56 us 1979338.78 us          22491     INODELK
+      3.86     711.10 us       6.61 us 1976693.98 us        2989842    FINODELK
+     13.25    6918.08 us      18.28 us  267487.49 us        1055892        READ
+     78.30    9886.37 us      52.97 us  576885.85 us        4365763       WRITE
+ 
+    Duration: 604868 seconds
+   Data Read: 88213118688 bytes
+Data Written: 389532263428 bytes
+ 
+Interval 5 Stats:
+   Block Size:                512b+                1024b+                2048b+ 
+ No. of Reads:                    0                     0                     0 
+No. of Writes:                53240                    36                 13513 
+ 
+   Block Size:               4096b+                8192b+               16384b+ 
+ No. of Reads:                   86                 79587                    63 
+No. of Writes:                 4816                309742                 20183 
+ 
+   Block Size:              32768b+               65536b+              131072b+ 
+ No. of Reads:                  226                    32                    52 
+No. of Writes:                14812                 12446                  5798 
+ 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us         108952     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          16862  RELEASEDIR
+      0.00      74.21 us      74.21 us      74.21 us              1   FGETXATTR
+      0.00     112.37 us     112.37 us     112.37 us              1   FSETXATTR
+      0.00     133.76 us      72.70 us     317.15 us             85     XATTROP
+      0.01      32.01 us       7.88 us     395.94 us           4463    GETXATTR
+      0.03     126.11 us      88.94 us     409.84 us           2637 REMOVEXATTR
+      0.03     107.37 us      68.72 us     468.91 us           3489     SETATTR
+      0.05     108.52 us       8.92 us     751.98 us           5807     READDIR
+      0.06      45.50 us       0.82 us    2596.99 us          16862     OPENDIR
+      0.31      37.00 us      10.77 us     979.66 us         108258       FLUSH
+      0.63      75.51 us      32.82 us    1398.78 us         108952        OPEN
+      0.82      50.12 us      18.59 us    2832.01 us         215744      STATFS
+      2.45     401.34 us     138.25 us   15750.94 us          80046        READ
+      2.77      98.65 us      21.36 us   23862.81 us         368316       FSYNC
+      5.54     113.96 us      10.53 us    3077.04 us         637753      LOOKUP
+      6.57      95.68 us      30.06 us   12807.80 us         901012    FXATTROP
+      7.38     222.62 us      86.76 us   20492.15 us         434586       WRITE
+     33.06   29315.45 us      12.57 us 1935381.57 us          14791     INODELK
+     40.30     586.21 us       6.61 us 1681170.93 us         901488    FINODELK
+ 
+    Duration: 349172 seconds
+   Data Read: 669683712 bytes
+Data Written: 5619491328 bytes
+ 
+Brick: tendrl16.lab.eng.blr.redhat.com:/gluster_bricks/vmstore/vmstore
+----------------------------------------------------------------------
+Cumulative Stats:
+   Block Size:                256b+                 512b+                1024b+ 
+ No. of Reads:               181205                    33                     2 
+No. of Writes:                   18                 93062                  2784 
+ 
+   Block Size:               2048b+                4096b+                8192b+ 
+ No. of Reads:                    0                   430                478044 
+No. of Writes:                22753                 10068               1216387 
+ 
+   Block Size:              16384b+               32768b+               65536b+ 
+ No. of Reads:                 1051                  2837                203134 
+No. of Writes:                73083                 62372                181782 
+ 
+   Block Size:             131072b+ 
+ No. of Reads:               540001 
+No. of Writes:              2703454 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us            243      FORGET
+      0.00       0.00 us       0.00 us       0.00 us         188998     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          29350  RELEASEDIR
+      0.00      64.71 us      64.71 us      64.71 us              1   FGETXATTR
+      0.00      70.44 us      70.44 us      70.44 us              1   FSETXATTR
+      0.00     111.85 us     105.49 us     118.21 us              2       RMDIR
+      0.00     764.64 us     181.30 us    1347.97 us              2       MKDIR
+      0.00     308.25 us      82.02 us     993.51 us              8    TRUNCATE
+      0.00      37.34 us      12.96 us     101.08 us            139          LK
+      0.00     335.83 us     166.16 us     868.64 us             20      RENAME
+      0.00     483.86 us     156.73 us    1432.01 us             22      CREATE
+      0.00     152.52 us      39.71 us    1505.50 us             88    READDIRP
+      0.00      95.03 us      46.22 us     581.60 us            594        STAT
+      0.00     128.49 us      67.26 us     736.01 us           2647 REMOVEXATTR
+      0.00     642.69 us      43.22 us   41434.80 us            603     XATTROP
+      0.00     110.56 us      67.32 us     863.99 us           6064     SETATTR
+      0.00     342.20 us     120.42 us   10939.47 us           2167       MKNOD
+      0.00     138.26 us       7.98 us  126766.19 us           7456    GETXATTR
+      0.00     120.82 us       8.88 us    3024.79 us          10079     READDIR
+      0.00      83.80 us      32.08 us     660.00 us          16203       FSTAT
+      0.00      46.50 us       0.77 us   12827.61 us          29350     OPENDIR
+      0.00      82.45 us       9.30 us  162571.09 us          22490     INODELK
+      0.01      33.66 us       7.85 us   11297.61 us         187530       FLUSH
+      0.03      79.00 us      27.79 us  185298.42 us         188981        OPEN
+      0.04      52.68 us      16.14 us   16924.12 us         373456      STATFS
+      0.09     832.00 us       6.41 us   87788.71 us          59321     ENTRYLK
+      0.10   24210.81 us      57.06 us  100752.48 us           2173      UNLINK
+      0.21      38.85 us       6.37 us   53569.63 us        2989855    FINODELK
+      0.27     125.33 us       5.70 us  140528.90 us        1189451      LOOKUP
+      0.61     250.51 us      22.93 us  274494.58 us        1317755       FSYNC
+      1.65     227.34 us      19.24 us  332806.23 us        3930870    FXATTROP
+     14.15    5455.65 us      16.64 us  320894.17 us        1406877        READ
+     82.82   10290.67 us      44.24 us  479779.10 us        4365763       WRITE
+ 
+    Duration: 604873 seconds
+   Data Read: 98523368762 bytes
+Data Written: 389532263428 bytes
+ 
+Interval 5 Stats:
+   Block Size:                256b+                 512b+                1024b+ 
+ No. of Reads:               104757                     0                     0 
+No. of Writes:                    0                 53240                    36 
+ 
+   Block Size:               2048b+                4096b+                8192b+ 
+ No. of Reads:                    0                    43                110554 
+No. of Writes:                13513                  4816                309742 
+ 
+   Block Size:              16384b+               32768b+               65536b+ 
+ No. of Reads:                    0                   338                     6 
+No. of Writes:                20183                 14812                 12446 
+ 
+   Block Size:             131072b+ 
+ No. of Reads:                   59 
+No. of Writes:                 5798 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us         108952     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          16862  RELEASEDIR
+      0.00      64.71 us      64.71 us      64.71 us              1   FGETXATTR
+      0.00      70.44 us      70.44 us      70.44 us              1   FSETXATTR
+      0.00      51.38 us      32.08 us      79.03 us              4       FSTAT
+      0.00     107.27 us      58.31 us     212.33 us              6    READDIRP
+      0.00      92.27 us      48.06 us     204.24 us            338        STAT
+      0.02    1222.07 us      82.45 us   37247.19 us             85     XATTROP
+      0.02      35.57 us       7.98 us     353.15 us           4223    GETXATTR
+      0.05     128.60 us      79.34 us     736.01 us           2637 REMOVEXATTR
+      0.06     107.96 us      68.45 us     319.26 us           3489     SETATTR
+      0.08      33.35 us      12.34 us    7175.10 us          14791     INODELK
+      0.11     120.39 us       8.88 us    3024.79 us           5807     READDIR
+      0.12      45.32 us       0.77 us     353.89 us          16862     OPENDIR
+      0.59      34.25 us      10.49 us    2980.88 us         108258       FLUSH
+      1.36      78.71 us      35.36 us    2031.39 us         108952        OPEN
+      1.71      49.83 us      16.14 us     985.93 us         215744      STATFS
+      6.08      42.45 us       7.15 us   53569.63 us         901488    FINODELK
+     11.53     113.83 us      10.49 us   37483.11 us         637753      LOOKUP
+     11.74     342.69 us      36.58 us   44127.30 us         215757        READ
+     14.88     254.36 us      27.57 us   54085.78 us         368316       FSYNC
+     24.45     354.17 us      93.51 us   50791.10 us         434586       WRITE
+     27.18     189.94 us      52.70 us   55101.48 us         901012    FXATTROP
+ 
+    Duration: 349172 seconds
+   Data Read: 961806251 bytes
+Data Written: 5619491328 bytes
+ 
+Brick: tendrl15.lab.eng.blr.redhat.com:/gluster_bricks/vmstore/vmstore
+----------------------------------------------------------------------
+Cumulative Stats:
+   Block Size:                256b+                 512b+                1024b+ 
+ No. of Reads:                    9                    39                     0 
+No. of Writes:                   18                 93062                  2784 
+ 
+   Block Size:               2048b+                4096b+                8192b+ 
+ No. of Reads:                    0                   448                404995 
+No. of Writes:                22753                 10068               1216387 
+ 
+   Block Size:              16384b+               32768b+               65536b+ 
+ No. of Reads:                 1023                  2537                188135 
+No. of Writes:                73083                 62372                181782 
+ 
+   Block Size:             131072b+ 
+ No. of Reads:              1207586 
+No. of Writes:              2703454 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us            243      FORGET
+      0.00       0.00 us       0.00 us       0.00 us         188998     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          29356  RELEASEDIR
+      0.00      63.21 us      63.21 us      63.21 us              1   FSETXATTR
+      0.00      86.76 us      86.76 us      86.76 us              1   FGETXATTR
+      0.00     375.82 us     105.96 us     645.69 us              2       RMDIR
+      0.00     689.71 us     185.50 us    1193.92 us              2       MKDIR
+      0.00     291.32 us      78.74 us     936.81 us              8    TRUNCATE
+      0.00      26.08 us      11.90 us      73.68 us            139          LK
+      0.00     416.55 us     160.22 us    2025.66 us             20      RENAME
+      0.00     476.11 us     142.76 us    1558.67 us             22      CREATE
+      0.00     451.89 us      40.39 us    8347.89 us            603     XATTROP
+      0.00     127.72 us      77.20 us     549.27 us           2647 REMOVEXATTR
+      0.00     111.40 us      66.93 us    5796.10 us           6064     SETATTR
+      0.00     355.54 us     120.68 us   15021.03 us           2167       MKNOD
+      0.00     124.18 us       7.92 us  120956.68 us           7628    GETXATTR
+      0.00     128.24 us       8.76 us    1861.76 us          10091     READDIR
+      0.00      47.89 us       0.83 us    7589.60 us          29356     OPENDIR
+      0.00      89.63 us       9.10 us  188104.18 us          22489     INODELK
+      0.00      90.73 us      27.27 us     571.09 us          23371       FSTAT
+      0.01     167.94 us      92.71 us    9168.01 us          24275    READDIRP
+      0.01      39.47 us       8.05 us   33161.61 us         187530       FLUSH
+      0.03      81.53 us      31.39 us   63171.99 us         188981        OPEN
+      0.03      55.01 us      18.03 us   35765.12 us         373458      STATFS
+      0.09     877.59 us       6.86 us  107656.48 us          59272     ENTRYLK
+      0.09   25184.99 us      57.84 us  120299.70 us           2173      UNLINK
+      0.18      37.00 us       6.70 us   54804.14 us        2989850    FINODELK
+      0.26     129.76 us       6.10 us  130333.26 us        1189460      LOOKUP
+      0.56     253.50 us      22.22 us  284826.91 us        1317755       FSYNC
+      1.57     239.92 us      18.54 us  408177.02 us        3930870    FXATTROP
+     14.84    4937.61 us      16.32 us  272678.51 us        1805169        READ
+     82.32   11329.29 us      48.15 us  593198.24 us        4365763       WRITE
+ 
+    Duration: 605566 seconds
+   Data Read: 183613426834 bytes
+Data Written: 389532263428 bytes
+ 
+Interval 5 Stats:
+   Block Size:                512b+                1024b+                2048b+ 
+ No. of Reads:                    0                     0                     0 
+No. of Writes:                53240                    36                 13513 
+ 
+   Block Size:               4096b+                8192b+               16384b+ 
+ No. of Reads:                   66                 90067                     1 
+No. of Writes:                 4816                309742                 20183 
+ 
+   Block Size:              32768b+               65536b+              131072b+ 
+ No. of Reads:                  209                     6                408821 
+No. of Writes:                14812                 12446                  5798 
+ 
+ %-latency   Avg-latency   Min-Latency   Max-Latency   No. of calls         Fop
+ ---------   -----------   -----------   -----------   ------------        ----
+      0.00       0.00 us       0.00 us       0.00 us         108952     RELEASE
+      0.00       0.00 us       0.00 us       0.00 us          16862  RELEASEDIR
+      0.00      63.21 us      63.21 us      63.21 us              1   FSETXATTR
+      0.00      86.76 us      86.76 us      86.76 us              1   FGETXATTR
+      0.00     246.13 us      77.71 us    1134.42 us             85     XATTROP
+      0.01      38.66 us       8.04 us    1023.29 us           4288    GETXATTR
+      0.03     127.64 us      83.97 us     335.59 us           2637 REMOVEXATTR
+      0.03     107.81 us      70.13 us    1624.04 us           3489     SETATTR
+      0.04      31.92 us      12.25 us    2134.47 us          14791     INODELK
+      0.07     130.13 us       8.76 us     801.48 us           5806     READDIR
+      0.07      47.34 us       0.83 us     431.31 us          16862     OPENDIR
+      0.19      90.69 us      27.27 us     571.09 us          23197       FSTAT
+      0.20     163.37 us      92.71 us    2224.00 us          13959    READDIRP
+      0.37      38.80 us       8.57 us    3983.22 us         108258       FLUSH
+      0.76      79.60 us      32.21 us     644.31 us         108952        OPEN
+      1.00      52.65 us      19.49 us     997.39 us         215744      STATFS
+      2.28      28.77 us       6.70 us   42099.45 us         901488    FINODELK
+      5.63     173.50 us      22.22 us   49199.61 us         368316       FSYNC
+      6.67     118.79 us      10.45 us    5340.72 us         637753      LOOKUP
+     10.23     267.47 us      87.95 us   40090.46 us         434586       WRITE
+     10.28     129.64 us      39.69 us   52992.34 us         901012    FXATTROP
+     62.13    1413.74 us     139.63 us   34950.77 us         499170        READ
+ 
+    Duration: 349172 seconds
+   Data Read: 54330400768 bytes
+Data Written: 5619491328 bytes
+ 

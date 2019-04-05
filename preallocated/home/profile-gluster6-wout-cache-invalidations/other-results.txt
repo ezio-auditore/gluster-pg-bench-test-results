@@ -1,0 +1,12 @@
+gluster6
+
+real	24m8.149s
+user	1m32.119s
+sys	0m3.298s
+
+pgbench=# SELECT pg_size_pretty( pg_database_size( current_database()
+pgbench(# ) ) As human_size
+pgbench-#     , pg_database_size( current_database() ) As raw_size;
+ human_size |  raw_size   
+------------+-------------
+ 58 GB      | 62726472196
